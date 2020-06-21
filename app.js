@@ -681,3 +681,385 @@
 // for(var i=0;i<=100;i+=5){
 //     document.write(i)
 // }
+
+
+//          Chapter = 21-25
+
+// Task-1
+
+// var first_name = prompt("Enter first name:");
+// var last_name = prompt("Enter last name:");
+// var full_name = first_name+last_name;
+// alert("Hello"+full_name);
+
+// Task-2
+// var mobile_name = prompt("Enter your favorite mobile model:")
+// var string_length = mobile_name.length;
+// document.write("My favorile mobile is "+mobile_name+"<br>")
+// document.write("Lenght"+string_length)
+
+// Task-3
+// var country = "Pakistani";
+// var index_num = country.indexOf("n")
+// alert(country+" "+"Index of:"+index_num);
+
+// Task-4
+// var example_txt = "Hello world";
+// var index_num = example_txt.lastIndexOf("l");
+// alert(example_txt+" "+index_num)
+
+// Task-5
+// var country = "Pakistani";
+// var find_char = country.charAt(3)
+// alert(find_char)
+
+// // Task-6
+// var first_name = prompt("Enter first name:");
+// var last_name = prompt("Enter last name:");
+// var full_name = first_name.concat(last_name)
+// alert(full_name)
+
+// Task-7
+// var city = "Hyderabad";
+// var new_city = city.replace("Hyder","Islam")
+// alert(new_city)
+
+// Task-8
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+// var new_message = message.replace(/and/g,"&")
+// document.write(new_message)
+
+// Task-9
+// var example = "247";
+// alert(example+" "+typeof(example))
+// var conv = parseInt(example)
+// alert(conv+" "+typeof(conv))
+
+// Task - 10
+// var example = prompt("Enter name:")
+// var new_text = example.toLocaleUpperCase();
+// alert(new_text);
+
+// Task - 12
+// var num = 35.36
+// var str = num.toString()
+// var str_1 = str.slice(0,2)
+// var str_2 = str.slice(3)
+// var ful_str = str_1+str_2;
+// alert(ful_str) 
+
+// Task-13
+// var username = prompt("Enter user_name:");
+// var arr = username.length;
+// for(var i=0; i < arr; i++){
+//     if(username.slice(i, i+2) === '@' || username.slice(i, i+2) === '!' || username.slice(i, i+2) === '.' username.slice(i, i+2) === ','){
+//         alert("invalid")
+//         break;
+//     }
+// }
+
+// Task-16
+// var university = "University of Karachi";
+// var arr = university.split("\n");
+// document.write(arr)
+
+// Task-17
+// var example = prompt("Enter name");
+// var a = example.slice(-1)
+// alert(a)
+
+//  Chapter = 26-30
+
+// Task-1
+// var num = 3.4135
+// num = Math.round(num)
+// num = Math.floor(num)
+// num = Math.ceil(num)
+// alert(num)
+
+// Task-2
+// var num = -2.224
+// var num_1 = Math.round(num)
+// var num_2 = Math.floor(num_1)
+// var new_num = Math.ceil(num_2)
+// alert(new_num)
+
+// Task-3
+// var num = -4
+// var new_num = Math.abs(num)
+// alert(new_num)
+
+// Task-4
+// var num = Math.random() * 6;
+// num = Math.floor(num);
+// alert(num);
+
+// Task-5
+// var toss = Math.random()*2;
+// toss = Math.floor(toss);
+// if(toss === 0){
+//     alert("Head")
+// }
+// else{
+//     alert("Tale")
+// }
+
+// Task-6
+// var num = Math.random()*100;
+// num = Math.floor(num);
+// alert(num)
+
+// Task-7
+// var weight = parseInt(prompt("Enter your weight: "))
+// alert("Your weight is "+weight)
+
+// // Task-8
+// var scrt_num = 6;
+// var num = Math.random()*10;
+// num = Math.floor(num)
+// if(num === scrt_num){
+//     alert("Corrent")
+// }
+// else{
+//     alert("Try again")
+// }
+
+// Chapter = 30 - 34
+
+// Task-1
+// var date = new Date()
+// alert(date)
+
+// Task-2
+// var month = new Date();
+// var str = month.toString()
+// month = str.slice(4,7);
+// alert(month)
+
+// Task-3
+// var today = new Date()
+// var str = today.toString()
+// today = str.slice(0,3)
+// alert(today)
+
+// Task-4
+// var fun_day = new Date();
+// fun_day = fun_day.getDay();
+// var day = new Date();
+// var str = day.toString();
+// str = str.slice(0,3)
+// if(fun_day === 0 || fun_day === 6){
+//     alert("It is fun day "+str)
+// }
+
+// Task - 5
+// var first_days = new Date();
+// first_days = first_days.getDate();
+// if(first_days <= 0){
+//     alert("first_days of months")
+// }
+// else{
+//     alert("Last days of months")
+// }
+
+// Task-6
+// var min = new Date();
+// var Milimin = min.getTime();
+// var min = Milimin/(1000*60*60)
+// alert("Milisec "+Milimin+"\n"+"Min:"+min)
+
+// Task-7
+// var time = new Date();
+// time = time.getHours();
+// if(time >= 0 || time <= 12 )
+//     alert("PM")
+// else
+//     ("AM")
+
+// Task-8
+// var first_days = new Date();
+// first_days = first_days.getDate();
+// if(first_days <= 31 && first_days >=15){
+//     var last_days = first_days;
+//      alert(last_days)
+// }
+
+// Task-10
+// var myday = new Date();
+// myday = myday.setFullYear(2015);
+// alert(myday)
+
+// Task-11
+// var mydate =  new Date()
+// alert(mydate)
+// var hour = new Date(mydate.setDate(mydate.getHours()-1)).toString();
+// alert(hour)
+
+// Task-12
+// var dob = new Date(prompt("Enter your date of birth"));
+// var dobMili = dob.getTime();
+// var today = new Date();
+// var toadyMili = today.getTime();
+// var diff = toadyMili - dobMili;
+// var myAge = Math.floor(diff(1000*60*60*24*30*12));
+// alert("Your age is:"myAge);
+
+// 
+
+
+// Chapter = 35-38
+// Task-1
+// var current_date = new Date();
+// alert(current_date);
+
+// Task-2
+// function name(){
+//     var first_name = prompt("enter first_name")
+//     var last_name = prompt("enter last_name")
+//     var ful_name = first_name+last_name;
+//     alert("Hello "+ful_name)
+// }
+// name()
+
+// Task-3
+// function sum(num1,num2){
+//     var add = num1+num2;
+//     return add;
+// }
+// var s = sum(5,10)
+// alert(s)
+
+// Task-4
+// function sum(num1,num2){
+//     return num1 + num2;
+// }
+// function calculate(num1,num2, myFunc){
+//     return myFunc(num1, num2)
+// }
+// var answer;
+// var opera = prompt('type operator');
+// if(opera === '+'){
+//     answer = calculate(2,5, sum);
+// }
+// alert('ans', answer);
+
+// Task-5
+// 
+// function num(startingNum, endingNum) {
+//     for (var i = startingNum; i <= endingNum; i++) {
+//     }
+// }
+// num(5,9)
+
+// Task-6
+// function factors(n)
+// {
+//  var num_factors = [], i;
+ 
+//  for (i = 1; i <= Math.floor(Math.sqrt(n)); i += 1)
+//   if (n % i === 0)
+//   {
+//    num_factors.push(i);
+//    if (n / i !== i)
+//     num_factors.push(n / i);
+//   }
+//  num_factors.sort(function(x, y)
+//    {
+//      return x - y;});  // numeric sort
+//      return num_factors;
+//     }
+// console.log(factors(15));  // [1,3,5,15] 
+
+
+// Task-8
+// var hypSqr = perSqr + baseSqr;
+// Math.sqrt();
+
+// function calculateHyp(perSqr, baseSqr){
+//     var hypSqr = perSqr + baseSqr;
+//     var hyp = Math.sqrt(hypSqr);
+//     console.log(hyp);
+// }
+// calculateHyp(8,8);
+
+// Task-9
+// function area(value_1,value_2){
+//     var a = value_1*value_2;
+//     return a;
+// }
+// var width = parseInt(prompt("Enter width:"))
+// var height = parseInt(prompt("Enter height:"))
+// var myare = area(width,height);
+// alert(myare)
+
+// Task-10
+// function check_Palindrome(str_entry){
+//        var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+//         var ccount = 0;
+//         if(cstr==="") {
+//             console.log("Nothing found!");
+//             return false;
+//         }
+   
+//         if ((cstr.length) % 2 === 0) {
+//             ccount = (cstr.length) / 2;
+//         } else {
+//             if (cstr.length === 1) {
+//                 console.log("Entry is a palindrome.");
+//                 return true;
+//             } else {
+//                 ccount = (cstr.length - 1) / 2;
+//             }
+//         }
+//         for (var x = 0; x < ccount; x++) {
+//             if (cstr[x] != cstr.slice(-1-x)[0]) {
+//                 console.log("Entry is not a palindrome.");
+//                 return false;
+//             }
+//         }
+//         console.log("The entry is a palindrome.");
+//         return true;
+//     }
+//     check_Palindrome('madam');
+   
+// Task-11
+// function capitalize_Words(str)
+// {
+//  return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+// }
+// console.log(capitalize_Words('The Quick Brown Fox'));
+
+// Task-12
+// function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// console.log(find_longest_word('Web Development Tutorial'));
+
+// Task-14
+// function circle(radius)
+// {
+//     this.radius = radius;
+//     this.area = function () 
+//     {
+//         return Math.PI * this.radius * this.radius;
+//     };
+//     this.perimeter = function ()
+//     {
+//         return 2*Math.PI*this.radius;
+//     };
+// }
+// var c = new circle(3);
+// console.log('Area =', c.area().toFixed(2));
+// console.log('perimeter =', c.perimeter().toFixed(2));
+
