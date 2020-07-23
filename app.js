@@ -1063,3 +1063,335 @@
 // console.log('Area =', c.area().toFixed(2));
 // console.log('perimeter =', c.perimeter().toFixed(2));
 
+
+
+// CHPATER 38 - 44
+
+// Task - 1
+
+// function pwr(){
+//     var num = parseInt(prompt("Enter the number:"));
+//     var power = num * num;
+//     console.log(power);
+// }
+// pwr()
+
+// Task - 3
+
+// function side(a,b,c){
+//     var s = (a+b+c)/2;
+//     return s;
+// }
+
+// function area(s,a,b,c){
+//     var a =  s -a ;
+//     var b = s-b;
+//     var c = s-c;
+//     var area = s*(a*b*c);
+//     return area;
+// }
+// var a = parseInt(prompt("Length of side of Triangle a is:"));
+// var b = parseInt(prompt("Length of side of Triangle b is:"));
+// var c = parseInt(prompt("Length of side of Triangle c is:"));
+
+// var s = side(a,b,c)
+// var area = area(s,a,b,c)
+// console.log("area of triangle is:"+area)
+// console.log("side of triangle is:"+s)
+
+// Task - 4
+
+// function mainFuntion(avg,pr){
+//     console.log("Average is:"+avg);
+//     console.log("Percentage is:"+pr+"%")
+// }
+// function avrg(sub1,sub2,sub3){
+//     var avg = (sub1+sub2+sub3)/3
+//     return avg;
+// }
+// function per(sub1,sub2,sub3,totalMark){
+//     var pr = ((sub1+sub2+sub3)/totalMark)*100;
+//     return pr;
+// }
+
+// var sub1 = parseInt(prompt("Enter marks of subject 1:"))
+// var sub2 = parseInt(prompt("Enter marks of subject 2:"))
+// var sub3 = parseInt(prompt("Enter marks of subject 3:"))
+// var totalMark = 300;
+// var avg = avrg(sub1,sub2,sub3)
+// var pr = per(sub1,sub2,sub3,totalMark)
+
+// mainFuntion(avg,pr)
+
+// Task - 6
+
+// var text = "This is example";
+// function foo(text){
+//     if(text.length <= 25){
+//         for(var i =0; i<text.length;i++){
+//            if(text.slice(i,i + 1) === 'a' || text.slice(i,i + 1) === 'e' || text.slice(i,i + 1) === 'i' || text.slice(i,i + 1) === 'o' || text.slice(i,i + 1) === 'u'){
+//             text = text.slice(0,i) + "" + text.slice(i+1)
+            
+//         }
+//         }
+//         return text
+//         }
+//         else{
+//             return "Your text too large"
+//         }
+// }
+// var mytext = foo(text)
+// console.log(mytext)
+
+// Task - 7
+
+// var text = "Pleases read this application and give me gratuity";
+// function foo(text){
+//     for(var i =0; i<text.length;i++){
+//         if(text[i] === 'a' || text[i] === 'e' || text[i] === 'i' || text[i] === 'o' || text[i] === 'u'){
+//             for(var j = i+1; j<text.length;j++){
+//                 if(text[j] === 'a' || text[j] === 'e' || text[j] === 'i' || text[j] === 'o' || text[j] === 'u')
+//                 {
+//                     text =  text[i] + text[j];
+//                 }
+//                 break;
+//             }
+//         }
+    
+//     }
+//     return text;
+// }
+
+// var exampleText = foo(text);
+// console.log(exampleText)
+
+// Task - 8
+
+// var city_1 = parseInt(prompt("Enter the city 1st distance"));
+// var city_2 = parseInt(prompt("Enter the city 2 distance"));
+//  var diff;
+
+//  diff = city_1 - city_2;
+//  diff = Math.abs(diff)
+//  console.log("KiloMeters:"+diff+"km")
+
+//  function meter(){
+//      diff = diff * 1000
+//      console.log("Meter:"+diff+"m")
+//  }
+//  function feet(){
+//     diff = diff * 2880.84
+//     console.log("Feet:"+diff+"f")
+// }
+// function inches(){
+//     diff = diff * 39370.08
+//     console.log("Inches:"+diff+"in")
+// }
+// function centimeter(){
+//     diff = diff * 1000000
+//     console.log("Centimeters:"+diff+"cm")
+// }
+//  meter()
+//  feet()
+//  inches()
+//  centimeter()
+
+// Task - 9
+
+// var getTime = parseInt(prompt("Enter your worked Time :"));
+// var overTimePaid = 12;
+// var total= 0;
+
+// if(getTime > 8 & getTime <= 40){
+//     total = getTime * overTimePaid;
+//     console.log("Your total overtime pay is: "+total)
+// }
+// else{
+//     console.log("Invalid, OverTime is between greater than 8 and less than 40 hours");
+// }
+
+// Task - 10
+
+// var getCash = parseInt(prompt("Enter price:"));
+// var temp = 0;
+// var temp_2 = 0;
+// var temp_3 = 0;
+
+// function getValue(getCash){
+
+//     temp = getCash / 100;
+//     temp = Math.floor(temp)
+
+//     temp_2 = getCash - (temp*100)
+//     temp_2 = temp_2 / 50;
+//     temp_2 = Math.floor(temp_2)
+
+//     temp_3 = getCash - (temp* 100) - (temp_2*50);
+//     temp_3 = temp_3 / 10;
+//     temp_3 = Math.floor(temp_3);
+
+// }
+//  function printValue(){
+//      getValue()
+//     console.log("You will have "+temp+" hudreds notes "+temp_2+" Fifty notes "+temp_3+" Ten notes")
+//  }
+
+// printValue()
+
+
+
+// CHATPER 43 - 48
+
+// Task - 1
+
+// function myFoo(){
+//    alert("Hello World");
+
+// }
+
+// Task - 2
+
+// function foo(){
+//    alert("Thank You")
+// }
+
+// Task - 4
+
+// function changeImage(){
+//    var imge = document.getElementById('getImage')
+//    imge.src = 'images/linux (2).jpg'
+
+// }
+// function recoverImage(){
+//    var imge = document.getElementById('getImage')
+//    imge.src = 'images/1.jpg'
+// }
+
+// Task - 5
+
+// var num = 0;
+// function increase(){
+//    var getValue = document.getElementById('getValue');
+//    num ++;
+//    getValue.innerHTML = num;
+// }
+// function decrease(){
+//    var getValue = document.getElementById('getValue');
+//    num --;
+//    getValue.innerHTML = num;
+// }
+
+// CHAPTER 49 - 52
+
+// Task - 1
+
+// var h1 = document.createElement('h1');
+//     var text = document.createTextNode("Student Sign up Form")
+//     h1.appendChild(text)
+//     var heading = document.getElementById('heading')
+//     heading.appendChild(h1)
+
+
+// function foo(){
+//     var fname = document.getElementById('fname');
+//      document.write("First Name:"+fname.value);
+//      var lname = document.getElementById('lname');
+//      document.write("Last Name:"+lname.value);
+//      var email = document.getElementById('email');
+//      document.write("email:"+email.value);
+//      var city = document.getElementById('city');
+//      document.write("city:"+city.value);
+// }
+
+// Task - 2
+
+// function foo(){
+// var text = "Reiciendis, nihil quod! Hic aspernatur ipsa sit magnam perspiciatis, quaerat pariatur aliquam rem fugiat, in iusto distinctio. A natus deleniti animi cupiditate"
+// var para = document.getElementById('para');
+// para.innerHTML = text
+// }
+
+// CHAPTER - 58 - 67
+
+// TASK - 1
+
+// var main_content = document.getElementById('main-content');
+// console.log(main_content.childNodes)
+// var render = document.getElementsByClassName('render');
+// for(var i=0;i<render.length;i++){
+//     console.log(render[i].innerHTML)
+// }
+// var fname = document.getElementById('first-name');
+// var text = 'salman';
+// fname.value = text;
+
+// var lname = document.getElementById('last-name');
+// var text = 'memon';
+// lname.value = text;
+
+// var email = document.getElementById('email');
+// var text = 'sm462433@gmail.com';
+// email.value = text;
+
+// Task - 2
+
+// var myVar = document.getElementById('form-content');
+// console.log(myVar.nodeType)
+
+// var lname = document.getElementById('lastName');
+// console.log(lname.nodeType)
+// console.log(lname.childNodes)
+
+// var text = "Last Name : Alex";
+// lname.innerHTML = text
+
+// var main_content = document.getElementById('main-content');
+// console.log(main_content.firstChild)
+// console.log(main_content.lastChild)
+
+// console.log(lname.previousSibling)
+// console.log(lname.nextSibling)
+
+// var email = document.getElementById('email')
+
+// console.log(email.parentNode)
+// console.log(email.nodeType)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
